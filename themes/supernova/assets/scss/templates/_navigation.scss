@@ -1,0 +1,118 @@
+// for color
+.navbar-light .navbar-nav .nav-item {
+  .nav-link {
+    color: $white;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &.active {
+    .nav-link {
+      background-color: $color-primary;
+      color: $black !important;
+      padding: 9px 25px;
+      border-radius: 50px;
+    }
+  }
+}
+
+// for padding
+.navigation {
+  padding-top: 70px;
+  max-width: 1320px;
+  margin: 0 auto;
+  .nav-button {
+    margin-right: -100px;
+  }
+  @include desktop-xl {
+    max-width: 1140px;
+  }
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  .nav-link {
+    margin: 0 1rem;
+    font-weight: 700;
+    font-size: 14px;
+    @include tablet {
+      padding: 0.5rem;
+    }
+  }
+}
+
+/* search */
+.search-btn {
+  border: 0;
+  background: transparent;
+}
+
+.search-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  z-index: 2;
+  visibility: hidden;
+  transition: 0.2s ease;
+  opacity: 0;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.search-box {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  background: $white;
+  font-size: 1.5rem;
+  padding: 0;
+
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.search-close {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  page-break-after: 10px;
+  font-size: 1.5rem;
+}
+
+// dark style
+.dark .navigation {
+  select {
+    color: $dark-text-color;
+    background-color: $dark;
+  }
+  .navbar-light .navbar-toggler {
+    color: $light;
+  }
+  .nav-link {
+    color: $dark-text-dark !important;
+  }
+  .nav-link:hover,
+  &.active .nav-link {
+    color: $color-primary !important;
+  }
+  .dropdown-menu {
+    background-color: $dark;
+    @include desktop {
+      border: 1px solid $dark-border-color;
+    }
+    .dropdown-item {
+      color: $dark-text-dark !important;
+      &:hover {
+        color: $color-primary !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "ETHOS"
+url = ""      # don't use a slash for home url
+weight = 1
+
+[[main]]
+name = "TEAM"
+url = "elements/"
+weight = 2
+
+[[main]]
+name = "SERVICES"
+url = "test/"
+weight = 3
+
+[[main]]
+name = "PORTFOLIO"
+url = "test/"
+weight = 4
+
+[[main]]
+name = "PARTNERS"
+url = "test/"
+weight = 5
+
+[[main]]
+name = "FAQS"
+url = "test/"
+weight = 6
+
+[[main]]
+name = "CONTACT"
+url = "contact/"
+weight = 7
+
+
+
+
+

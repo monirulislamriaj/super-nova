@@ -1,0 +1,227 @@
+.banner-section {
+  background-image: url(../images/earth-banner.png);
+  background-position: right;
+  background-size: cover;
+  padding: 140px 0 200px;
+  margin-top: -150px;
+  h1 {
+    font-size: 60px;
+    font-weight: 500;
+    margin: 80px 0 0;
+  }
+  h2 {
+    margin-top: 75px;
+    font-size: 3rem;
+    line-height: 50px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  h3 {
+    font-size: 2rem;
+    line-height: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.section-ethos {
+  background-image: url(../images/star-burst.png);
+  background-position: center;
+  background-size: cover;
+  h1 {
+    font-size: 60px;
+    line-height: 52px;
+    color: lighten(saturate(adjust-hue($color-primary, -15), 3.47), 16.67);
+    margin-bottom: 50px;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 40px;
+  }
+  h3 {
+    color: lighten(saturate(adjust-hue($color-primary, -15), 3.47), 16.67);
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+}
+
+.about-section {
+  background-color: $black;
+  h2 {
+    color: $color-primary;
+    font-size: 36px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    span {
+      color: $white;
+    }
+  }
+  h3 {
+    color: $white;
+    font-size: 30px;
+    line-height: 38px;
+    text-transform: capitalize;
+  }
+  .card {
+    h2 {
+      color: lighten(saturate(adjust-hue($color-primary, -15), 3.47), 16.67);
+      font-size: 36px;
+      line-height: 24px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.feature-section {
+  background-image: url(../images/i-stock.png);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+  h2 {
+    color: lighten(saturate(adjust-hue($color-primary, -15), 3.47), 16.67);
+    font-weight: 600;
+    font-size: 36px;
+  }
+  h3 {
+    font-weight: 500;
+  }
+  .wraper {
+    position: relative;
+    padding: 20px 30px 10px;
+    border-radius: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.397);
+    &::before {
+      position: absolute;
+      content: "";
+      width: 95%;
+      height: 5px;
+      background: $color-primary;
+      border-radius: 15px;
+      bottom: -3px;
+    }
+    .card {
+      h3 {
+        color: $white;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.services-section {
+  background-image: url(../images/arms-background.png);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 50px;
+  .section-title {
+    h2 {
+      color: lighten(saturate(adjust-hue($color-primary, -15), 3.47), 16.67);
+    }
+  }
+  .card {
+    &-one {
+      background: lighten(
+        saturate(adjust-hue($color-primary, -15), 3.47),
+        16.67
+      );
+    }
+    &-two {
+      background: rgb(89, 201, 89);
+    }
+    &-three {
+      background: rgb(94, 236, 247);
+    }
+    &-four {
+      background: $color-primary;
+    }
+    &-three,
+    &-four {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.308);
+      &::before {
+        position: absolute;
+        content: "";
+        width: 95%;
+        height: 5px;
+        background: $color-primary;
+        border-radius: 15px;
+        bottom: -3px;
+      }
+    }
+  }
+}
+.getlit-section {
+  background-image: url(../images/earth-background.png);
+  background-position: right;
+  background-size: cover;
+  padding: 100px 0 150px;
+  .section-title {
+    h2 {
+      color: lighten(saturate(adjust-hue($color-primary, -15), 3.47), 16.67);
+    }
+    h3 {
+      color: $color-primary;
+      span {
+        color: $white;
+      }
+    }
+  }
+  .card {
+    h2 {
+      color: $white;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: $color-primary;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.portfolio-section {
+  background-color: rgba(221, 217, 217, 0.911);
+  padding: 50px 0;
+  .card {
+    padding: 10px;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.author-section {
+  .card {
+    padding: 10px;
+    border: 1px solid $color-primary;
+    border-radius: 5px;
+    .author-content {
+      display: flex;
+      .logo {
+        position: absolute;
+        bottom: 0;
+        left: -20px;
+        margin-right: 10px;
+      }
+      .detalse {
+        h2 {
+          color: $color-primary;
+        }
+        h3 {
+          color: $color-primary;
+          padding-right: 50px;
+        }
+      }
+    }
+  }
+}
+
+.footer-section {
+  background-image: url(../images/earth-supernova.png);
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0 150px;
+}
