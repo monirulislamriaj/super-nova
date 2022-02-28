@@ -11,7 +11,7 @@
     .nav-link {
       background-color: $color-primary;
       color: $black !important;
-      padding: 9px 25px;
+      padding: 3px 25px 0;
       border-radius: 50px;
     }
   }
@@ -19,14 +19,22 @@
 
 // for padding
 .navigation {
-  padding-top: 70px;
   max-width: 1320px;
   margin: 0 auto;
   .nav-button {
     margin-right: -100px;
+    @include desktop-xl {
+      margin-right: -40px;
+    }
+    @include desktop-lg {
+      margin-right: 0px;
+    }
   }
   @include desktop-xl {
     max-width: 1140px;
+  }
+  @include desktop-lg {
+    max-width: 960px;
   }
 }
 .navbar-expand-lg .navbar-nav .nav-item {
@@ -34,12 +42,25 @@
     margin: 0 1rem;
     font-weight: 700;
     font-size: 14px;
+    display: inline-block;
+    @include desktop-lg {
+      margin: 0px;
+    }
     @include tablet {
       padding: 0.5rem;
     }
   }
 }
-
+.navbar {
+  top: 40px;
+  @include desktop {
+    position: fixed;
+    top: 30px;
+    width: calc(100% - 100px);
+    left: 11%;
+    z-index: 999;
+  }
+}
 /* search */
 .search-btn {
   border: 0;
